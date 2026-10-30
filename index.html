@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ahmad Restaurant | Fresh & Delicious Food</title>
+    <meta name="description" content="Enjoy delicious burgers, pizza and fresh food at Ahmad Restaurant. Order through WhatsApp.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">AHMAD <span>RESTAURANT</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#menu" class="nav-order">Order Now</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="eyebrow">WELCOME TO AHMAD RESTAURANT</span>
+            <h1>Fresh Food.<br><span>Happy Moments.</span></h1>
+            <p>Delicious taste, fresh ingredients and food made with love.</p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn primary-btn">Explore Menu</a>
+                <a href="#about" class="btn outline-btn">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900"
+                 alt="Restaurant interior">
+        </div>
+
+        <div class="about-content">
+            <span class="eyebrow">OUR STORY</span>
+            <h2>Good Food, Great Taste</h2>
+            <p>
+                At Ahmad Restaurant, we believe good food brings people together.
+                We serve delicious meals made with care and quality ingredients.
+            </p>
+            <a href="#menu" class="btn primary-btn">Explore Our Food</a>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu-section" id="menu">
+        <div class="section-heading">
+            <span class="eyebrow">OUR MENU</span>
+            <h2>Popular Food Items</h2>
+            <p>Choose your favourite meal.</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="burger">Burgers</button>
+            <button class="filter-btn" data-filter="pizza">Pizza</button>
+            <button class="filter-btn" data-filter="fries">Sides</button>
+        </div>
+
+        <div class="food-container">
+
+            <article class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Zinger Burger">
+                <div class="food-info">
+                    <h3>Zinger Burger</h3>
+                    <p>Crispy chicken with fresh sauce.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 450</strong>
+                        <button class="add-btn" data-name="Zinger Burger" data-price="450">Add +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Chicken Pizza">
+                <div class="food-info">
+                    <h3>Chicken Pizza</h3>
+                    <p>Delicious pizza with cheese.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 900</strong>
+                        <button class="add-btn" data-name="Chicken Pizza" data-price="900">Add +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="fries">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600" alt="French Fries">
+                <div class="food-info">
+                    <h3>French Fries</h3>
+                    <p>Golden and crispy fries.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 250</strong>
+                        <button class="add-btn" data-name="French Fries" data-price="250">Add +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="Cheese Burger">
+                <div class="food-info">
+                    <h3>Cheese Burger</h3>
+                    <p>Juicy burger with melted cheese.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 550</strong>
+                        <button class="add-btn" data-name="Cheese Burger" data-price="550">Add +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600" alt="Special Pizza">
+                <div class="food-info">
+                    <h3>Special Pizza</h3>
+                    <p>Fresh toppings and delicious cheese.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 1100</strong>
+                        <button class="add-btn" data-name="Special Pizza" data-price="1100">Add +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="fries">
+                <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600" alt="Potato Fries">
+                <div class="food-info">
+                    <h3>Potato Fries</h3>
+                    <p>Crunchy potato snacks.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 300</strong>
+                        <button class="add-btn" data-name="Potato Fries" data-price="300">Add +</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- CART -->
+        <div class="cart-box" id="cart">
+            <h3>Your Shopping Cart</h3>
+            <p>Items added: <strong id="cartCount">0</strong></p>
+            <p>Total: <strong id="cartTotal">Rs. 0</strong></p>
+            <div id="cartItems">Your cart is empty.</div>
+            <button class="btn primary-btn" id="checkoutBtn">Order on WhatsApp</button>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery-section" id="gallery">
+        <div class="section-heading">
+            <span class="eyebrow">FOOD GALLERY</span>
+            <h2>A Taste of Happiness</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=700" alt="Burger food">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=700" alt="Pizza food">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700" alt="Fresh meal">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700" alt="Grilled food">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you!</p>
+        </div>
+
+        <div class="contact-details">
+            <p>📍 Address: SAMNABAD,LAHORE</p>
+            <p>📞 Phone: 03278014863</p>
+            <p>🕒 Opening Hours: 12 PM – 11 PM</p>
+        </div>
+
+        <a href="#cart" class="btn primary-btn">Place Your Order</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>AHMAD RESTAURANT</h3>
+        <p>Fresh Food. Happy Moments.</p>
+        <p>© 2026 Ahmad Restaurant. All Rights Reserved.</p>
+        <a href="#home">Back to Top ↑</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
